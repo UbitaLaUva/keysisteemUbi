@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Generador de Keys</title>
+</head>
+<body>
+<h1>Generador de Keys</h1>
+<button onclick="generateKey()">Generar Key</button>
+<p id="key"></p>
+
+<script>
+function generateKey() {
+    fetch("generator.php") // Llama al archivo PHP
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById("key").innerText = "Tu Key: " + data.key;
+    });
+}
+</script>
+</body>
+</html>
