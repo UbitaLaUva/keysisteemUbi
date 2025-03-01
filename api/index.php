@@ -48,7 +48,7 @@
 
 <script>
 function generateKey() {
-    fetch("generator.php") // Llama al archivo PHP
+    fetch("https://keysisteem-ubi.vercel.app/generator.php") // Llama al archivo PHP
     .then(response => response.json())
     .then(data => {
         if (data.key) {
