@@ -2,7 +2,10 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 header("Content-Type: application/json");
-$conn = new mysqli("novacodeportal.xyz", "u972882902_2B8UOLu7hm8V", "kU]9=@a#", "u972882902_keySistem");
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: GET, POST");
+header("Access-Control-Allow-Headers: Content-Type");
+$conn = new mysqli("srv1244.hstgr.io", "u972882902_2B8UOLu7hm8V", "kU]9=@a#", "u972882902_keySistem");
 
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
