@@ -1,6 +1,6 @@
 <?php
 header("Content-Type: application/json");
-$conn = new mysqli("srv1244.hstgr.io", "u972882902_2B8UOLu7hm8V", "kU]9=@a#", "u972882902_keySistem");
+$conn = new mysqli("193.203.166.109", "u972882902_2B8UOLu7hm8V", "kU]9=@a#", "u972882902_keySistem");
 
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
