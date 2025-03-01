@@ -48,7 +48,7 @@
 
 <script>
 function generateKey() {
-    fetch("generate.php") // Llama al archivo PHP
+    fetch("generator.php") // Llama al archivo PHP
     .then(response => response.json())
     .then(data => {
         if (data.key) {
